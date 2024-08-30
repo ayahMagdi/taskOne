@@ -7,19 +7,12 @@ import Design3d from './Design3d'
 import Archive from './Archive'
 import Apps from './Apps'
 
-const ServicesContent = () => {
-
-
-    const [content , setContent] = useState('marketing')
-
-    const sectionContent = (content) => {
-        setContent(content)
-    }
-
+const ServicesContent = ({sectionContent ,content}) => {
+   
   return (
     <div className='bg-[rgba(0,19,90,1)] pt-10'>
         <div className='bg-white py-10 px-[200px]'>
-            <ServicesSections sectionContent={sectionContent} />
+            <ServicesSections sectionContent={sectionContent} content={content} />
             {content === 'marketing' &&  <Marketing />}
             {content === 'design' &&  <Designing />}
             {content === '3d' &&  <Design3d />}

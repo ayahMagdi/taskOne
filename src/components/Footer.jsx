@@ -2,8 +2,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import logoImage from '../assets/OBJECTS.png';
 import { faFacebook, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { EnvelopeIcon, MapPinIcon, PhoneIcon } from '@heroicons/react/20/solid'
+import SocialLinks from './SocialLinks';
+import { useTranslation } from 'react-i18next';
+import { Link, NavLink } from 'react-router-dom';
 
-const Footer = () => {
+const Footer = ({sectionContent}) => {
+
+  const { t } = useTranslation();
+
+  const services = t('services', { returnObjects: true });
+
+  const links = ['/', '/about', '/services', '/works', '/contact'];
+
   return (
     <div className='bg-[rgba(0,19,90,1)] pt-10'> 
       <div className='bg-[rgba(69,80,120,1)] py-8 px-32'>
@@ -15,30 +25,43 @@ const Footer = () => {
                 </div>
                 <div>
                     <h5 className='mb-3'>وسائل التواصل</h5>
-                    <ul className='flex gap-7 items-center'>
+                    <SocialLinks />
+                    {/* <ul className='flex gap-7 items-center'>
                         <li><FontAwesomeIcon icon={faFacebook} /></li>
                         <li><FontAwesomeIcon icon={faTwitter} /></li>
                         <li><FontAwesomeIcon icon={faInstagram} /></li>
                         <li><FontAwesomeIcon icon={faLinkedin} /></li>
-                    </ul>
+                    </ul> */}
                 </div>
             </div>
             <div>
                <h4 className='mb-7'>خدمات</h4>
                <ul className='mb-8'>
-                   <li className='mb-7 text-xs'>تسويق الكتروني</li>
+                {services?.map((service , index) => 
+                  <li className='mb-7 text-xs hover:text-[rgba(255,102,0,1)] transition-all' key={index}>
+                     <Link
+                      onClick={() => sectionContent(service.active)}
+                      to="/services"
+                      >
+                           {service.text}
+                      </Link>
+                  </li>
+                )}
+                   {/* <li className='mb-7 text-xs'>تسويق الكتروني</li>
                    <li className='mb-7 text-xs'>تصميم مواقع و انظمه</li>
                    <li className='mb-7 text-xs'>تصميم 3d</li>
                    <li className='mb-7 text-xs'>خدمات ارشفه الكترونيه</li>
-                   <li className='mb-7 text-xs'>تطبيقات موبايل Android _ ios</li>
+                   <li className='mb-7 text-xs'>تطبيقات موبايل Android _ ios</li> */}
                </ul>
             </div>
             <div>
-               <h4 className='mb-7'>الرئيسية</h4>
-               <h4 className='mb-7'>الخدمات</h4>
-               <h4 className='mb-7'>من نحن</h4>
-               <h4 className='mb-7'>اعمالنا</h4>
-               <h4 className='mb-7'>تواصل معنا</h4>
+              {t('navlinks')?.map((e , i) => <h4 className='mb-7 hover:text-[rgba(255,102,0,1)] transition-all' key={i}>
+                 <NavLink to={links[i]} className={({ isActive }) =>
+                             isActive ? " text-[rgba(255,102,0,1)] transition-all" : "text-white transition-all"
+                  }>
+                   {e}
+                 </NavLink>
+              </h4>)}
             </div>
             <div>
                <h4 className='mb-7'>تواصل معنا</h4>

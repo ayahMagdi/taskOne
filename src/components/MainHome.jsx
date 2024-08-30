@@ -5,6 +5,7 @@ import leftImg from '../assets/Rectangle 17.png';
 import mainImg1 from '../assets/Rectangle 19.png'
 import mainImg2 from '../assets/Rectangle 20.png'
 import { useTranslation } from 'react-i18next';
+import 'animate.css';
 
 const MainHome = () => {
 
@@ -13,7 +14,7 @@ const MainHome = () => {
     const {text1 ,text2 , btn} = t('main')
 
   return (
-    <div className='bg-[rgba(0,19,90,1)] h-screen relative'>
+    <div className='bg-[rgba(0,19,90,1)] h-screen relative mt-[165px]'>
          <div className='flex justify-center h-full ml-28 absolute left-[50%] translate-x-[-50%]'>
             <img src={logoImage} />
         </div>
@@ -38,10 +39,10 @@ const MainHome = () => {
             </div>
         </div>
 
-         <div className='main__desc text-white w-[80%] flex justify-end items-center h-full'>
+         <div className='main__desc text-white w-[80%] flex justify-end items-center h-full animate__animated animate__backInDown'>
            <div className='flex justify-center items-center relative flex-col'>
            <h1 className='text-[45px] font-bold text-center mb-10'> {text1} <span className='block mt-2'>{text2}</span></h1>
-            <button className='bg-white rounded-2xl font-semibold text-lg w-36 text-[rgba(0,19,90,1)] py-2'>{btn}</button>
+            <button className='bg-white rounded-2xl font-semibold text-lg transition-all w-36 text-[rgba(0,19,90,1)] py-2 hover:bg-[rgba(255,102,0,1)] hover:text-white'>{btn}</button>
            </div>
          </div>
 
