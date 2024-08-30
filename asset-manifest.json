@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/taskOne/static/css/main.da29a46f.css",
-    "main.js": "/taskOne/static/js/main.3aa6e595.js",
+    "main.css": "/taskOne/static/css/main.577bad27.css",
+    "main.js": "/taskOne/static/js/main.9350e5b7.js",
     "static/js/453.a529e84b.chunk.js": "/taskOne/static/js/453.a529e84b.chunk.js",
+    "static/media/448054303___n.mp4": "/taskOne/static/media/448054303_7670876546312794_614272128183978856_n.042cd8fcc35eec88346e.mp4",
     "static/media/photo-1491895200222-0fc4a4c35e18 2.png": "/taskOne/static/media/photo-1491895200222-0fc4a4c35e18 2.b462ca45de646dc4aa39.png",
-    "static/media/Rectangle 53.png": "/taskOne/static/media/Rectangle 53.eacee9b12b294fcbfb50.png",
+    "static/media/Mask groupp.png": "/taskOne/static/media/Mask groupp.486d4228efbefc3b6647.png",
     "static/media/Mask group.png": "/taskOne/static/media/Mask group.21c33c169e7f4eb99ded.png",
     "static/media/pexels-photo-3760093 1.png": "/taskOne/static/media/pexels-photo-3760093 1.69a946784c57c4fb90a1.png",
     "static/media/Rectangle 17 (1).png": "/taskOne/static/media/Rectangle 17 (1).ae41fdfe034c3df73591.png",
@@ -15,6 +16,7 @@
     "static/media/أنواع-وخصائص-التسويق-الإلكتروني 3.png": "/taskOne/static/media/أنواع-وخصائص-التسويق-الإلكتروني 3.8f40404fcf8b24a9822f.png",
     "static/media/Picture1.png": "/taskOne/static/media/Picture1.286c65a4d6c8de9b2a9a.png",
     "static/media/2020-09-14_174146 1.png": "/taskOne/static/media/2020-09-14_174146 1.f9acc9c0fe83668beb72.png",
+    "static/media/-removebg-preview 1 (1).png": "/taskOne/static/media/9a60413525a7fc68c5de7ed98689796c-removebg-preview 1 (1).5e34d5dbea3f2a496f58.png",
     "static/media/1486548184_1380994313_1 1.png": "/taskOne/static/media/1486548184_1380994313_1 1.a2565212cc1e22da6911.png",
     "static/media/dizajn-interera-3d-modelirovanie.png": "/taskOne/static/media/dizajn-interera-3d-modelirovanie.ad81d554bcbdc794def6.png",
     "static/media/images (5) 1.png": "/taskOne/static/media/images (5) 1.36716fc4243c76f59db0.png",
@@ -28,12 +30,12 @@
     "static/media/difference-earchive-e-invoice 1.png": "/taskOne/static/media/difference-earchive-e-invoice 1.2cbf6af52908b38a04c0.png",
     "static/media/Rectangle 54.png": "/taskOne/static/media/Rectangle 54.a410981536114c159446.png",
     "index.html": "/taskOne/index.html",
-    "main.da29a46f.css.map": "/taskOne/static/css/main.da29a46f.css.map",
-    "main.3aa6e595.js.map": "/taskOne/static/js/main.3aa6e595.js.map",
+    "main.577bad27.css.map": "/taskOne/static/css/main.577bad27.css.map",
+    "main.9350e5b7.js.map": "/taskOne/static/js/main.9350e5b7.js.map",
     "453.a529e84b.chunk.js.map": "/taskOne/static/js/453.a529e84b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.da29a46f.css",
-    "static/js/main.3aa6e595.js"
+    "static/css/main.577bad27.css",
+    "static/js/main.9350e5b7.js"
   ]
 }
